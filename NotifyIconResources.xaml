@@ -4,6 +4,8 @@
                     xmlns:local="clr-namespace:Clicknado">
 
     <ContextMenu x:Key="TrayMenu">
+        <MenuItem Header="Enable Input Routers" Command="{Binding EnableInputRoutersCommand}" />
+        <MenuItem Header="Disable Input Routers" Command="{Binding DisableInputRoutersCommand}" />
         <MenuItem Header="Configure" Command="{Binding ShowConfigurationWindowCommand}" />
         <MenuItem Header="Exit" Command="{Binding ExitApplicationCommand}" />
     </ContextMenu>

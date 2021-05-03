@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    <PackageReference Include="LowLevelInput.Net" Version="1.36.6" />
     <PackageReference Include="SimWinMouse" Version="1.0.2" />
   </ItemGroup>
 

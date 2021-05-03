@@ -28,7 +28,43 @@ namespace Clicknado
         /// <summary>Exits the application.</summary>
         public ICommand ExitApplicationCommand
         {
-            get { return new DelegateCommand { Action = () => Application.Current.Shutdown() }; }
+            get
+            {
+                return new DelegateCommand
+                {
+                    Action = () =>
+                    {
+                        MainWorker.Shutdown();
+                        Application.Current.Shutdown();
+                    }
+                };
+            }
+        }
+
+        /// <summary>Enables the input router system. All configured input routers will start operating.</summary>
+        public ICommand EnableInputRoutersCommand
+        {
+            get
+            {
+                return new DelegateCommand
+                {
+                    Action = () => MainWorker.Enable(),
+                    CanUse = () => !MainWorker.IsEnabled
+                };
+            }
+        }
+
+        /// <summary>Disables the input router system. All configured input routers will stop operating.</summary>
+        public ICommand DisableInputRoutersCommand
+        {
+            get
+            {
+                return new DelegateCommand
+                {
+                    Action = () => MainWorker.Disable(),
+                    CanUse = () => MainWorker.IsEnabled
+                };
+            }
         }
     }
 }
