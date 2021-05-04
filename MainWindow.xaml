@@ -7,6 +7,6 @@
         Title="Clicknado Configuration" Height="500" Width="800" Icon="/TrayIcon.ico">
     <Grid>
         <Label Content="Testing..." HorizontalAlignment="Left" Height="37" Margin="29,10,0,0" VerticalAlignment="Top" Width="187"/>
-
+        <Button Margin="29,306,233,47" />
     </Grid>
 </Window>
