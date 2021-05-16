@@ -9,3 +9,9 @@ It listens to low-level keyboard input and responds by simulating repetitive mou
 This can be helpful because many games and applications require clicking at a fast rate, for prolonged times, to be effectiv.
 Such constant clicking patterns can be unhealthy for your hands, especially for those who already have physical difficulties with these activities.
 My hope is that this simple application will help a few people to participate in games and applications that they would not have been able to without it.
+
+## Status
+
+Currently, Clicknado is a _functional prototype_.
+Tray functionality is working (including enabling and disabling input reactions).
+Holding F11 results in spamming left mouse clicks wherever your mouse cursor is... but the app is _not yet configurable_ through the UI.
