@@ -16,6 +16,14 @@ Currently, Clicknado is a _functional prototype_.
 Tray functionality is working (including enabling and disabling input reactions).
 Holding F11 results in spamming left mouse clicks wherever your mouse cursor is... but the app is _not yet configurable_ through the UI.
 
+Unfortunately, Clicknado will not work with all software.
+The technique used to simulate mouse clicks is a simple one, asking Windows APIs to post the events.
+So, success may depend on how the individual software reads its input (whether receiving Windows events, or directly reading hardware).
+
+**WARNING**: Do not use near any software which might do dangerous things when clicking certain areas (like making purchases when you click, or deleting things).
+This easier-clicking input mode can be a blessing and a curse, taking a little while to get used to: It can be all too easy to absent-mindedly sweep the mouse while still holding the input that is also causing mouse clicks.
+Carefully test how this software works, and then use with care!
+
 ## Other Info
 
 * For bug reports, or to see upcoming planned work: See the Issues tab.
