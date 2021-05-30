@@ -1,8 +1,8 @@
 # Clicknado
 
-![alt text](https://github.com/DavidRieman/Clicknado/blob/main/TrayIcon.ico?raw=true)
+![alt text](https://github.com/DavidRieman/Clicknado/blob/main/src/TrayIcon.ico?raw=true)
 A Windows accessibility tool which simulates repetitive mouse clicks.
-![alt text](https://github.com/DavidRieman/Clicknado/blob/main/TrayIcon.ico?raw=true)
+![alt text](https://github.com/DavidRieman/Clicknado/blob/main/src/TrayIcon.ico?raw=true)
 
 Clicknado is an application which lives as an icon in the notification area of your task bar.
 It listens to low-level keyboard input and responds by simulating repetitive mouse clicks for you.
